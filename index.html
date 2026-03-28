@@ -1,96 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>M M M I C</title>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMMIC — Madan Mohan Malviya Inter College</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <h1>MMMIC</h1>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-    <ul id="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#event">Event</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#" class="logo">
+      MMMIC
+      <span>Madan Mohan Malviya Inter College</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#event">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="nav-cta">Visit Us</a></li>
     </ul>
-</nav>
+  </nav>
 
-<!-- HERO -->
-<section class="hero">
-    <div>
-        <h1>Area's Biggest Inter College</h1>
-        <p>Learn anywhere, grow everywhere with madan mohan malviya inter college.</p>
-        <button class="btn" onclick="showMsg()">Visit Us</button>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="floating-shape shape1"></div>
+    <div class="floating-shape shape2"></div>
+    <div class="floating-shape shape3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">Est. Excellence in Education</div>
+      <h1>Area's Biggest <em>Inter College</em></h1>
+      <p>Learn anywhere, grow everywhere with Madan Mohan Malviya Inter College — where tradition meets tomorrow.</p>
+      <div class="hero-btns">
+        <a href="#courses" class="btn-primary">Explore Courses</a>
+        <a href="#contact" class="btn-outline">Visit Campus →</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="stat-num" data-count="500">0</span>
+          <span class="stat-label">Students+</span>
+        </div>
+        <div>
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Streams</span>
+        </div>
+        <div>
+          <span class="stat-num" data-count="15">0</span>
+          <span class="stat-label">Years Legacy</span>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- COURSES -->
-<section class="section" id="courses">
-    <h2>Our Courses</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>PCM</h3>
-            <p>Build strong fundamentals in engineering sector.</p>
-        </div>
-
-        <div class="card">
-            <h3>PCB</h3>
-            <p>Professional biology lab.</p>
-        </div>
-
-        <div class="card">
-            <h3>ART</h3>
-            <p>Advanced Global learning.</p>
-        </div>
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>PCM</span><span class="marquee-dot">◆</span>
+      <span>PCB</span><span class="marquee-dot">◆</span>
+      <span>Arts</span><span class="marquee-dot">◆</span>
+      <span>NCC Day</span><span class="marquee-dot">◆</span>
+      <span>Republic Day</span><span class="marquee-dot">◆</span>
+      <span>Independence Day</span><span class="marquee-dot">◆</span>
+      <span>Excellence in Education</span><span class="marquee-dot">◆</span>
+      <span>PCM</span><span class="marquee-dot">◆</span>
+      <span>PCB</span><span class="marquee-dot">◆</span>
+      <span>Arts</span><span class="marquee-dot">◆</span>
+      <span>NCC Day</span><span class="marquee-dot">◆</span>
+      <span>Republic Day</span><span class="marquee-dot">◆</span>
+      <span>Independence Day</span><span class="marquee-dot">◆</span>
+      <span>Excellence in Education</span><span class="marquee-dot">◆</span>
     </div>
-</section>
+  </div>
 
-<!-- CAMPUS -->
-<section class="section event" id="event">
-    <h2>Our Annual Event</h2>
+  <!-- COURSES -->
+  <section id="courses">
+    <div class="section-label reveal">Our Programmes</div>
+    <h2 class="section-title reveal">Shape Your <em>Future</em> Here</h2>
+    <p class="reveal section-desc">Three powerful streams to launch your academic journey, each built on strong fundamentals and real-world focus.</p>
 
-    <div class="cards">
-        <div class="card">
-            <img src="">
-            <h3>NCC DAY</h3>
-        </div>
-
-        <div class="card">
-            <img src="">
-            <h3>REPUBLIC DAY</h3>
-        </div>
-
-        <div class="card">
-            <img src="">
-            <h3>INDEPENDENCE DAY</h3>
-        </div>
+    <div class="courses-grid">
+      <div class="course-card">
+        <div class="course-icon">⚗️</div>
+        <h3>PCM</h3>
+        <p>Build strong fundamentals in Physics, Chemistry, and Mathematics — the gateway to engineering, technology, and innovation sectors.</p>
+        <span class="course-tag">Science Stream</span>
+      </div>
+      <div class="course-card" style="transition-delay: 0.12s">
+        <div class="course-icon">🧬</div>
+        <h3>PCB</h3>
+        <p>Explore the science of life with professional Biology labs, guided by expert faculty towards medicine and life sciences careers.</p>
+        <span class="course-tag">Medical Stream</span>
+      </div>
+      <div class="course-card" style="transition-delay: 0.24s">
+        <div class="course-icon">🎨</div>
+        <h3>Arts</h3>
+        <p>Advanced global learning through humanities, social science, and creative disciplines — building critical thinkers and cultural leaders.</p>
+        <span class="course-tag">Humanities Stream</span>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- CONTACT -->
-<section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@mmmic.com</p>
-    <button class="btn" onclick="contact()">Send Message</button>
-</section>
+  <!-- EVENTS -->
+  <section id="event">
+    <div class="section-label reveal">Annual Celebrations</div>
+    <h2 class="section-title reveal">Events That <em>Unite Us</em></h2>
+    <p class="reveal section-desc">Our annual events build character, national pride, and lifelong memories for every student in our community.</p>
 
-<footer>
-    <p>© 2026 MMMIC</p>made with heart by SHIBAMU
-</footer>
+    <div class="events-grid">
+      <div class="event-card">
+        <div class="event-img-placeholder">🎖️</div>
+        <div class="event-overlay">
+          <div class="event-year">Annual</div>
+          <div class="event-title">NCC Day</div>
+          <div class="event-line"></div>
+        </div>
+      </div>
+      <div class="event-card" style="transition-delay: 0.15s">
+        <div class="event-img-placeholder">🇮🇳</div>
+        <div class="event-overlay">
+          <div class="event-year">January 26</div>
+          <div class="event-title">Republic Day</div>
+          <div class="event-line"></div>
+        </div>
+      </div>
+      <div class="event-card" style="transition-delay: 0.3s">
+        <div class="event-img-placeholder">🎊</div>
+        <div class="event-overlay">
+          <div class="event-year">August 15</div>
+          <div class="event-title">Independence Day</div>
+          <div class="event-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label reveal">Get In Touch</div>
+    <h2 class="section-title reveal">We'd Love To <em>Hear You</em></h2>
 
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <p>Whether you're a prospective student, parent, or partner — our doors and inboxes are always open. Reach out and we'll get back to you promptly.</p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-text">
+            <strong>Email Us</strong>
+            info@mmmic.com
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div class="contact-text">
+            <strong>Visit Campus</strong>
+            Madan Mohan Malviya Inter College
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <div class="contact-text">
+            <strong>Call Us</strong>
+            Enquire for number
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell us how we can help you..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">MMMIC</div>
+    <p class="footer-copy">© 2026 MMMIC · Made with <span>♥</span> by SHIBAMU</p>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#event">Events</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
